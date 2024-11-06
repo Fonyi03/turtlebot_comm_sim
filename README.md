@@ -20,3 +20,8 @@ A projekt célja, hogy szemléltesse a több robot közötti adatmegosztást és
 Telepítsd a szükséges ROS2 csomagokat:
 ```bash
 sudo apt install ros-foxy-gazebo-ros-pkgs ros-foxy-turtlebot3*
+```
+
+## A Projekt Felépítése
+- **Launch Fájlok**: A `multi_robot_launch.py` fájl két robotot indít el a Gazebo szimulációban, valamint elindítja az rviz2 alkalmazást.
+- **Kommunikációs Csomópontok**: A `multi_robot_comm.py` csomópont kezeli a robotok közötti kommunikációt, és megosztja a pozíciójukat a szimuláció során.
