@@ -64,6 +64,6 @@ ros2_ws/
 - **Interaktív HUD vagy irányító felület**: Opcionálisan hozzáadhatsz egy olyan kezelőfelületet, amely mutatja a robotok állapotát és pozícióját, vagy ahol beállítható a célpontjuk.
 
 ## Szerző és Karbantartás
-Készítette: [A neved]  
-GitHub: [GitHub repository link]  
+Készítette: Fonyó Máté  
+GitHub: https://github.com/Fonyi03/turtlebot_comm_sim  
 Licenc: MIT
