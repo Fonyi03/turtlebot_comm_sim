@@ -1,0 +1,13 @@
+# Rendszerkönyvtárak kizárása
+/.VirtualBox/
+/.android/
+/.bash_history
+.git/
+.gk/
+.vscode/
+/AppData/
+/Documents/
+/Downloads/
+/Desktop/
+/*.lnk
+/*.msi
