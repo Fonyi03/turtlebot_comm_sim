@@ -1,20 +1,22 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String
+from visualization_msgs.msg import Marker
 
 class SubscriberNode(Node):
     def __init__(self):
         super().__init__('subscriber_node')
+
+        # Marker-ek figyelése
         self.subscription = self.create_subscription(
-            String,
-            '/robot_burger/cmd_vel',
+            Marker,
+            '/robot_burger/marker',
             self.listener_callback,
             10)
         self.subscription  # Prevent unused variable warning
         self.get_logger().info('Subscriber Node Started')
 
     def listener_callback(self, msg):
-        self.get_logger().info(f'Received: {msg.data}')
+        self.get_logger().info(f'Received Marker from Burger Robot: {msg.ns}')
 
 def main(args=None):
     rclpy.init(args=args)
