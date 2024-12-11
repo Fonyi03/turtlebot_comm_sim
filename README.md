@@ -27,17 +27,7 @@ sudo apt install ros-foxy-gazebo-ros-pkgs ros-foxy-turtlebot3*
 - **Kommunikációs Csomópontok**: A `multi_robot_comm.py` csomópont kezeli a robotok közötti kommunikációt, és megosztja a pozíciójukat a szimuláció során.
 
 ## A Projekt Futtatása
-Hozd létre a workspace-t, majd építsd fel a kódot:
-```bash
-mkdir -p ~/ros2_ws/src
-cd ~/ros2_ws
-colcon build
-source install/setup.bash
-```
-Indítsd el a szimulációt és a 3D vizualizációt a következő paranccsal:
-```bash
-ros2 launch your_package_name multi_robot_launch.py
-```
+Lásd a Wiki fület
 
 ## A Projekt Részletei
 - **Pozíciómegosztás**: Az egyik robot pozícióját átadjuk a másik robotnak, így képesek koordinálni egymás mozgását.
