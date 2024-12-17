@@ -145,5 +145,5 @@ A projekt aktuális állapotát, a frissítéseket és a kódot a GitHub Reposit
 
 ## **Szerző**
 
-- Név: Fonyó
-- Email: fonyo.nate@hallgato.sze.hu
+- Név: Fonyó Máté
+- Email: fonyo.mate@hallgato.sze.hu
