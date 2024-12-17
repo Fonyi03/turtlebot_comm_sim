@@ -15,6 +15,7 @@ A projekt célja, hogy szemléltesse a több robot közötti adatmegosztást és
 - **Gazebo** - A 3D szimulációs környezet a robotok mozgásának és interakcióinak szimulálásához.
 - **rviz2** - A robotok és a környezet valós idejű vizualizálásához.
 - **Turtlebot3 csomagok** - A robotmodellek és alapértelmezett beállítások eléréséhez.
+- **Evata csomag** - A robotmodellek közötti ütközések elkerülése végett szükséges. 
 
 ### Követelmények Telepítése
 Telepítsd a szükséges ROS2 csomagokat:
