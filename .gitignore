@@ -1,0 +1,27 @@
+# Colcon build files
+build/
+install/
+log/
+
+# Python cache files
+**/__pycache__/
+*.pyc
+*.pyo
+
+# ROS2 specific
+.colcon/
+
+# Gazebo models and temp files
+.gazebo/
+*.tmp
+
+# IDE and editor files
+.vscode/
+*.swp
+*.swo
+*.idea/
+*.iml
+
+# System files
+.DS_Store
+Thumbs.db

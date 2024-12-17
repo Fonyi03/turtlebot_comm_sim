@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <!-- Physics settings -->
+    <physics name="default_physics" type="ode">
+      <max_step_size>0.01</max_step_size>
+      <real_time_update_rate>100</real_time_update_rate>
+    </physics>
+
+    <!-- Robot 1 -->
+    <model name="robot1">
+      <include>
+        <uri>model://turtlebot3_burger</uri>
+        <plugin name="robot1_imu_plugin" filename="libgazebo_ros_imu_sensor.so">
+          <ros>
+            <namespace>robot1</namespace>
+            <node_name>robot1_imu_node</node_name>
+          </ros>
+        </plugin>
+        <plugin name="robot1_diff_drive" filename="libgazebo_ros_diff_drive.so">
+          <ros>
+            <namespace>robot1</namespace>
+            <remapping>cmd_vel:=/robot1/cmd_vel</remapping>
+            <remapping>odom:=/robot1/odom</remapping>
+          </ros>
+          <left_joint>left_wheel_joint</left_joint>
+          <right_joint>right_wheel_joint</right_joint>
+        </plugin>
+      </include>
+      <pose>0 0 0 0 0 0</pose>
+    </model>
+
+    <!-- Robot 2 -->
+    <model name="robot2">
+      <include>
+        <uri>model://turtlebot3_burger</uri>
+        <plugin name="robot2_imu_plugin" filename="libgazebo_ros_imu_sensor.so">
+          <ros>
+            <namespace>robot2</namespace>
+            <node_name>robot2_imu_node</node_name>
+          </ros>
+        </plugin>
+        <plugin name="robot2_diff_drive" filename="libgazebo_ros_diff_drive.so">
+          <ros>
+            <namespace>robot2</namespace>
+            <remapping>cmd_vel:=/robot2/cmd_vel</remapping>
+            <remapping>odom:=/robot2/odom</remapping>
+          </ros>
+          <left_joint>left_wheel_joint</left_joint>
+          <right_joint>right_wheel_joint</right_joint>
+        </plugin>
+      </include>
+      <pose>2 0 0 0 0 0</pose>
+    </model>
+  </world>
+</sdf>
+
